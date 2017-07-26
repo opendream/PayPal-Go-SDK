@@ -55,10 +55,21 @@ type (
 		Phone       string `json:"phone,omitempty"`
 	}
 
+	AmountDetails struct {
+		Subtotal         string `json:"subtotal"`
+		Shipping         string `json:"shipping"`
+		Tax              string `json:"tax"`
+		HandlingFee      string `json:"handling_fee"`
+		ShippingDiscount string `json:"shipping_discount"`
+		Insurance        string `json:"insurance"`
+		GiftWrap         string `json:"gift_wrap"`
+	}
+
 	// Amount struct
 	Amount struct {
-		Currency string `json:"currency"`
-		Total    string `json:"total"`
+		Currency string         `json:"currency"`
+		Total    string         `json:"total"`
+		Details  *AmountDetails	`json:"details"`
 	}
 
 	// AmountPayout struct
