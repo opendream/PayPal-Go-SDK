@@ -192,10 +192,12 @@ type (
 
 	// ExecuteResponse struct
 	ExecuteResponse struct {
-		ID           string        `json:"id"`
-		Links        []Link        `json:"links"`
-		State        string        `json:"state"`
-		Transactions []Transaction `json:"transactions,omitempty"`
+		ID            string        `json:"id"`
+		Links         []Link        `json:"links"`
+		State         string        `json:"state"`
+		Transactions  []Transaction `json:"transactions,omitempty"`
+		FailureReason string        `json:"failure_reason,omitempty"`
+
 	}
 
 	// FundingInstrument struct
