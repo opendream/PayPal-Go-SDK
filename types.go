@@ -272,6 +272,7 @@ type (
 		State               string        `json:"state,omitempty"`
 		UpdateTime          *time.Time    `json:"update_time,omitempty"`
 		ExperienceProfileID string        `json:"experience_profile_id,omitempty"`
+		FailureReason       string        `json:"failure_reason,omitempty"`
 	}
 
 	// PaymentResponse structure
